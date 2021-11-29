@@ -1,7 +1,7 @@
 import os
 import os.path
 import shutil
-import SOECE13085_SAKSHI_RAMESHBHAI_JOBANPUTRA_gui
+import source
 
 def file_extension(filename):
     split_tup = os.path.splitext(filename)
@@ -20,8 +20,8 @@ def file_exists(f):
 def movefile(s, d):
     shutil.move(s, d)
 
-source = SOECE13085_SAKSHI_RAMESHBHAI_JOBANPUTRA_gui.source
-destination = SOECE13085_SAKSHI_RAMESHBHAI_JOBANPUTRA_gui.destination
+source = input("Enter your path:")
+destination = source
 
 source += '/'
 destination += '/'
